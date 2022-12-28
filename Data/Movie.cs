@@ -8,5 +8,8 @@ namespace EntityFrameworkPlayground.Data
 {
     internal class Movie
     {
+        public string Id { get; set; }
+        public string Name { get; set; }
+        public Genre Genre { get; set; }
     }
 }
