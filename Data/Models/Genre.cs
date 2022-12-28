@@ -4,12 +4,11 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace EntityFrameworkPlayground.Data
+namespace EntityFrameworkPlayground.Data.Models
 {
-    internal class Movie
+    public class Genre
     {
         public string Id { get; set; }
         public string Name { get; set; }
-        public Genre Genre { get; set; }
     }
 }

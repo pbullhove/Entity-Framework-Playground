@@ -3,6 +3,7 @@ using EntityFrameworkPlayground.Data;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 #nullable disable
@@ -10,9 +11,11 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace EntityFrameworkPlayground.Migrations
 {
     [DbContext(typeof(Context))]
-    partial class ContextModelSnapshot : ModelSnapshot
+    [Migration("20221228140319_movies1")]
+    partial class movies1
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -21,7 +24,7 @@ namespace EntityFrameworkPlayground.Migrations
 
             SqlServerModelBuilderExtensions.UseIdentityColumns(modelBuilder);
 
-            modelBuilder.Entity("EntityFrameworkPlayground.Data.Models.Genre", b =>
+            modelBuilder.Entity("EntityFrameworkPlayground.Data.Genre", b =>
                 {
                     b.Property<string>("Id")
                         .HasColumnType("nvarchar(450)");
@@ -35,7 +38,7 @@ namespace EntityFrameworkPlayground.Migrations
                     b.ToTable("Genre");
                 });
 
-            modelBuilder.Entity("EntityFrameworkPlayground.Data.Models.Movie", b =>
+            modelBuilder.Entity("EntityFrameworkPlayground.Data.Movie", b =>
                 {
                     b.Property<string>("Id")
                         .HasColumnType("nvarchar(450)");
@@ -55,9 +58,9 @@ namespace EntityFrameworkPlayground.Migrations
                     b.ToTable("Movie");
                 });
 
-            modelBuilder.Entity("EntityFrameworkPlayground.Data.Models.Movie", b =>
+            modelBuilder.Entity("EntityFrameworkPlayground.Data.Movie", b =>
                 {
-                    b.HasOne("EntityFrameworkPlayground.Data.Models.Genre", "Genre")
+                    b.HasOne("EntityFrameworkPlayground.Data.Genre", "Genre")
                         .WithMany()
                         .HasForeignKey("GenreId")
                         .OnDelete(DeleteBehavior.Cascade)
