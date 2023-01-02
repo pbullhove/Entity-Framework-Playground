@@ -2,8 +2,9 @@
 {
     public enum ResponseType
     {
-        Easy = 0,
+        Deleted = 0,
+        Easy = 1,
         OK = 2,
-        Hard = 1,
+        Hard = 3,
     }
 }

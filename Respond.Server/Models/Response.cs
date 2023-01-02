@@ -1,8 +1,14 @@
-﻿namespace EntityFrameworkPlayground.Models
+﻿using System.ComponentModel.DataAnnotations;
+
+namespace EntityFrameworkPlayground.Models
 {
     public class Response
     {
-        public string Id { get; set; }
-        public string Response { get; set; }
+        public int Id { get; set; }
+        public Respondent Respondent { get; set; }
+        
+        [Timestamp]
+        public byte[] Timestamp { get; set; }
+        public ResponseType Message { get; set; }
     }
 }
