@@ -2,5 +2,7 @@
 {
     public class Presenter
     {
+        public string Id { get; set; }
+
     }
 }
