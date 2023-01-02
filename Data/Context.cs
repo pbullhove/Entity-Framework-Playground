@@ -10,11 +10,11 @@ namespace EntityFrameworkPlayground.Data
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
-            modelBuilder.Entity<Genre>(g =>
+            modelBuilder.Entity<Course>(g =>
             {
                 g.HasKey(g => g.Id);
             });
-            modelBuilder.Entity<Movie>(m =>
+            modelBuilder.Entity<Presenter>(m =>
             {
                 m.HasKey(m => m.Id);
                 m.HasOne(m => m.Genre)

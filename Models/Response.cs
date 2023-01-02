@@ -1,4 +1,4 @@
-﻿namespace EntityFrameworkPlayground.Data.Models
+﻿namespace EntityFrameworkPlayground.Models
 {
     public class Response
     {

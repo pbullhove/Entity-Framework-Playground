@@ -1,4 +1,4 @@
-﻿namespace EntityFrameworkPlayground.Data.Models
+﻿namespace EntityFrameworkPlayground.Models
 {
     public class Session
     {
@@ -7,5 +7,6 @@
         public Course Course { get; set; }
         public Presenter Presenter { get; set; }
         public List<ResponseType> ValidResponses { get; set; }
+        public SessionStatus Status { get; set; }
     }
 }
