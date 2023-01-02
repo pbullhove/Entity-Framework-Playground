@@ -1,4 +1,4 @@
-﻿using EntityFrameworkPlayground.Data.Models;
+﻿using EntityFrameworkPlayground.Models;
 using Microsoft.EntityFrameworkCore;
 
 namespace EntityFrameworkPlayground.Data
