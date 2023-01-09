@@ -1,9 +1,9 @@
-﻿using EntityFrameworkPlayground.Data;
-using EntityFrameworkPlayground.Data.Models;
+﻿using Respond.Data;
+using Respond.Data.Models;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Internal;
 
-namespace EntityFrameworkPlayground.NewFolder
+namespace Respond.NewFolder
 {
     public class DatabaseService
     {

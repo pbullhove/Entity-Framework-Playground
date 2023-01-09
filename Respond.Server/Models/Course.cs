@@ -1,4 +1,4 @@
-﻿namespace EntityFrameworkPlayground.Models
+﻿namespace Respond.Models
 {
     public class Course
     {

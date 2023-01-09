@@ -1,6 +1,4 @@
-﻿using EntityFrameworkPlayground.Data;
-using EntityFrameworkPlayground.Data.Models;
-using EntityFrameworkPlayground.Extensions;
+﻿using Respond.Data;
 using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -19,21 +17,3 @@ var app = builder.Build();
 using var scope = app.Services.CreateScope();
 var database = scope.ServiceProvider.GetRequiredService<Context>();
 
-//database.Database.Migrate();
-
-var genre = new Genre { 
-    Id = "action-id", 
-    Name = "Action"
-};
-
-var movie = new Movie
-{
-    Id = "die-hard-id",
-    Name = "Die Hard 2",
-    Genre = genre
-};
-
-database.Set<Genre>().AddOrUpdate(genre);
-database.Set<Movie>().AddOrUpdate(movie);
-
-database.SaveChanges(); 

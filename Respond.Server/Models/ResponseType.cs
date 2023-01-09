@@ -1,4 +1,4 @@
-﻿namespace EntityFrameworkPlayground.Models
+﻿namespace Respond.Models
 {
     public enum ResponseType
     {

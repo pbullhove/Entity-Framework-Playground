@@ -1,6 +1,6 @@
 ﻿using Microsoft.EntityFrameworkCore;
 
-namespace EntityFrameworkPlayground.Extensions
+namespace Respond.Extensions
 {
     public static class DbSetExtensions
     {

@@ -1,7 +1,7 @@
-﻿using EntityFrameworkPlayground.Models;
+﻿using Respond.Models;
 using Microsoft.EntityFrameworkCore;
 
-namespace EntityFrameworkPlayground.Data
+namespace Respond.Data
 {
     public class Context : DbContext
     {

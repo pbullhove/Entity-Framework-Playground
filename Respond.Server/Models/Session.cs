@@ -1,6 +1,6 @@
 ﻿using System.ComponentModel.DataAnnotations;
 
-namespace EntityFrameworkPlayground.Models
+namespace Respond.Models
 {
     public class Session
     {

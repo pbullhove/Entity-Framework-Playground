@@ -2,7 +2,7 @@
 
 #nullable disable
 
-namespace EntityFrameworkPlayground.Migrations
+namespace Respond.Migrations
 {
     /// <inheritdoc />
     public partial class movies4 : Migration
