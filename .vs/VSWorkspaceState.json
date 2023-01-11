@@ -1,10 +1,10 @@
 {
   "ExpandedNodes": [
     "",
-    "\\Respond.Client\\ClientApp",
-    "\\Respond.Client\\ClientApp\\src",
-    "\\Respond.Client\\Controllers"
+    "\\respond.client",
+    "\\respond.client\\public",
+    "\\respond.client\\src"
   ],
-  "SelectedNode": "\\ReSpond.sln",
+  "SelectedNode": "\\respond.client\\src\\App.js",
   "PreviewInSolutionExplorer": false
 }
